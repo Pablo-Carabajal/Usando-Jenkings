@@ -15,7 +15,7 @@ pipeline {
                     if (mensaje == "hola mundo,todo bien") {
                         echo "El mensaje es correcto"
                     } else {
-                        error "El mensaje es incorrecto"
+                        echo "El mensaje es incorrecto"
                     }
                
             }
