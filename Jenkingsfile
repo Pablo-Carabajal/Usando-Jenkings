@@ -11,7 +11,7 @@ pipeline {
         stage('Test') {
             steps {
                 // Ejecutar el programa y verificar la salida
-                sh 'java HolaMundo'
+                sh 'java hola mundo,todo bien'
             }
         }
     }
