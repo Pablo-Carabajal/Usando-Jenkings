@@ -11,11 +11,11 @@ pipeline {
         stage('Test') {
             steps {
                  script {
-                    def output = sh(script: 'java -cp src Main', returnStdout: true).trim()
-                    if (output == "hola mundo,todo bien") {
-                        echo "Test Passed: Output is as expected."
+                    def mensaje= sh'java -cp src Main'
+                    if (mensaje == "hola mundo,todo bien") {
+                        echo "El mensaje es correcto"
                     } else {
-                        error "Test Failed: Output is '${output}' but expected 'hola mundo,todo bien'."
+                        error "El mensaje es incorrecto"
                     }
                
             }
