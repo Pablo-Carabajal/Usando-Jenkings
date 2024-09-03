@@ -14,7 +14,7 @@ pipeline {
                 // Ejecutar el programa y verificar la salida
                 def mensaje = sh(script:"java -cp bin Main")
 
-                if(mensaje ==="hola mundo,todo bien"){
+                if(mensaje == "hola mundo,todo bien"){
                  echo "El mensaje esta correcto"
                 }
                 else{
