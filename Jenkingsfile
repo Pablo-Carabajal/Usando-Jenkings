@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Compilar el programa Java
-                sh 'javac HolaMundo.java'
+                sh 'javac src/Main.java'
             }
         }
         stage('Test') {
