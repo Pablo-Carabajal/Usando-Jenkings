@@ -11,7 +11,7 @@ pipeline {
         stage('Test') {
             steps {
                  script {
-                    def mensaje= sh(script:'java -cp src Main')
+                    def mensaje= sh(script:'java -cp src Main',returnStdout: true)
                     if (mensaje == "hola mundo,todo bien") {
                         echo "El mensaje es correcto"
                     } else {
