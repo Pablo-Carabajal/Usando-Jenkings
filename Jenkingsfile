@@ -12,7 +12,7 @@ pipeline {
             steps {
                  script{
                 // Ejecutar el programa y verificar la salida
-                def mensaje = sh(script:"java -cp bin Main")
+                def mensaje = sh(script:"java  src/Main")
 
                 if(mensaje == "hola mundo,todo bien"){
                  echo "El mensaje esta correcto"
